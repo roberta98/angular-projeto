@@ -1,0 +1,29 @@
+<div class="container"> 
+	<div class="row d-flex">
+		<div class="col-12 campaigns">
+			<div class="justify-content-between header">
+				<h2>Campaigns</h2>
+				<a href="/createCampaigns" class="new-campaign">New Campaign</a>
+			</div>
+		</div>
+
+		<table>
+			<tr> 
+				<th>Campaign</th>
+				<th>Start Date</th>
+				<th>End Date</th>
+				<th></th>
+			</tr>
+		
+			<tr *ngFor="let i of campaigns">
+				<td>{{i.title}}</td>
+				<td>{{i.dateBegin | date:"dd/MM/yyyy"}}</td>
+				<td>{{i.dateEnd | date:"dd/MM/yyyy"}}</td>
+				<td>
+					<a (click)="deleteCampaign(i._id)"><img src="./images/trash.png" alt="trash"></a>
+					<a (click)="getCampaign()" [routerLink]="'/campaign/'+i._id" ><img src="./images/edit.png" alt="edit"></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

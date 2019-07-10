@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="row d-flex">
+		<div class="col-6">
+			<div class="edit-campaign">
+				<h4>Title of campaign</h4>
+				<input *ngIf="campaign != undefined" type="text" [(ngModel)]="campaign.title" placeholder="{{campaign.title}}">
+				<h4>Description</h4>
+				<textarea *ngIf="campaign != undefined" name="" id="" cols="59" rows="5" [(ngModel)]="campaign.description" placeholder="{{campaign.description}}"></textarea>
+				<h4>Actions</h4>
+				<ul >
+					<li *ngFor="let i of campaign.actions"> 
+						<a >{{i.title}}<img src="images/trash.png" alt=""></a>
+					</li>
+				</ul>
+				<a  href="/createAction" class="new-action">Add Action</a>
+				
+				<div class="finish-form">
+					<a href="" class="cancel" [routerLink]='["/"]'>Back home</a>
+					<a class="new-campaign" (click)="createCampaign()">Salve campaign</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="edit-img">
+				<!-- <img src="images/loki.jpg" alt="loki"> -->
+			</div>
+		</div>
+	</div>
+</div>

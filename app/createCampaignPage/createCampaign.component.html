@@ -1,0 +1,49 @@
+<div class="container">
+	<div class="row d-flex">
+		<div class="col-12 create-campaigns">
+			<div class="header">
+				<h2>Let's get started</h2>
+			</div>
+			<div class="form">
+				<p>1. Wicth Hero id starring in this campaign? <br/>
+					<span>Don't see the hero you want to use? Add a new hero</span>
+				</p>
+				<input type="file"> 
+				 
+				<ul class="col-12">
+					<li>
+						<img src="" alt="caracter"> <br/> 
+						<p><br/></p>
+						
+					</li>
+				</ul>
+				
+				<p><br/>2. What is the title od th campaign?</p>
+				<input type="text" (keyup)="getTitle(title.value)" placeholder="Name of campaign" #title >
+				
+				
+				<p><br/>3. Write a brief description od the campaign</p>
+				<textarea class="col-6" name="" id="" cols="59" rows="6" (keyup)="getDescription(description.value)" #description></textarea>
+				
+				<p><br/> 4. When will the campaign start and end? This can updated later</p>
+				<div  class="col-6 justify-content-between calender-text">
+					<span>Start</span>
+					<span>End</span>
+				</div>
+			
+				<div class="col-8 calender">
+					<input type="date" (keyup)="getDateBegin(dateBegin.value)" #dateBegin>
+					<input type="date" (keyup)="getDateEnd(dateEnd.value)" #dateEnd>	
+				</div>
+
+				<div class="finish-form">
+					<a href="" class="cancel">Cancel</a>	
+					<a (click)="createCampaign()" class="new-campaign">Create campaign</a>
+				</div>
+					
+			</div>
+			
+		</div>
+		
+	</div>
+</div>

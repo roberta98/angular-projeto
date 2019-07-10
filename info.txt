@@ -1,0 +1,15 @@
+GET - http://50.116.18.236:5000/api/campaign (retorna todas as campanhas )
+GET - http://50.116.18.236:5000/api/campaign/{id} (retorna uma campanhas especifica )
+POST - http://50.116.18.236:5000/api/campaign (cria a campanha )
+PUT - http://50.116.18.236:5000/api/campaign/{id} (altera a campanha ) 
+DELETE	- http://50.116.18.236:5000/api/campaign/{id} (delete campanha )
+
+--------------------------//-----------------------------//
+Download postman
+https://www.getpostman.com/downloads/
+import 
+https://www.getpostman.com/collections/5f26ca055146b1ed05ca
+
+---------------------------//-----------------------------//
+
+https://s.codetasty.com/Roberta/mysandbox/app

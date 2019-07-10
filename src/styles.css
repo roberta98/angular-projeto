@@ -1,0 +1,236 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+	color: #454545;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+a{
+	cursor: pointer;
+}
+header {
+	width: 100%;
+	display: block;
+	box-shadow: 0px 3px 5px 0px #eee;
+	padding: 10px;
+}
+.caracter{
+	width: 200px;
+	height: 200px;
+}
+header .img-logo img {
+	width: 200px;
+}
+
+header .title {
+	text-align: center;
+}
+
+header .title h1 {
+	margin-bottom: 0;
+}
+
+.col-nav {
+	max-width: 300px;
+	padding: 25px;
+	background-color: #2b448c;
+}
+
+.nav-sidebar ul {
+	margin-top: 30px;
+}
+
+.nav-sidebar ul li {
+	display: block;
+	color: white;
+}
+
+.nav-sidebar ul li a {
+	display: block;
+	padding: 10px;
+	color: white;
+	font-weight: 500;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nav-sidebar ul li a:hover {
+	background: #4772ed;
+}
+
+.header {
+	display: flex;
+}
+
+.campaigns,
+.create-action,
+.create-campaigns{
+	padding: 25px;
+}
+
+.options-campaigns {
+	margin-top: 45px;
+}
+
+.options-campaigns ul {
+	display: flex;
+}
+
+.options-campaigns ul li {
+	list-style: none;
+}
+
+.table-campaigns table {
+	display: flex;
+	margin-top: 30px;
+}
+
+th:first-child {
+	padding-left: 10px;
+	padding-right: 50px;
+}
+th {
+	width: 200px;
+	padding-bottom: 25px;
+	color: #454545;
+}
+
+tr {
+	margin-bottom: 15px;
+}
+
+tr:nth-child(2n+2) {
+	background: #eee;
+}
+
+td:first-child {
+    padding-left: 10px;
+}
+
+td {
+	text-align: left;
+	width: 200px;
+	height: 60px;
+	vertical-align: middle;
+}
+td a img {
+    width: 20px;
+    margin-left: 20px;
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 5px;
+    height: 40px;
+}
+a.new-action,
+a.new-action,
+a.new-campaign {
+	display: block;
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background: #2b448c;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cancel{
+    width: 220px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: #2b448c;
+    border: 1px solid #2b448c;
+    font-weight: 700;
+    background: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.arrow-down{
+    width: 12px;
+    margin-left: 15px;
+    vertical-align: initial;	
+}
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+.finish-form{
+	display: flex;
+	color: white;
+}
+input[type="date"]{
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background: #2b448c;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.calender{
+	padding-left: 0px;
+}
+.calender-text span:first-child{
+	width: 220px;
+	display: inline-flex;
+}
+.form ul{
+    display: inline-flex;
+}
+.form ul li{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #454545;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.edit-campaign{
+	padding: 15px;
+}
+.edit-campaign input{
+	margin-bottom:20px;
+	width:100%;
+}
+.edit-campaign ul li{
+	list-style: none;
+	
+}
+.edit-campaign ul li a img{
+	width: 15px;
+	vertical-align: initial;
+	margin-left: 20px;
+}
+.edit-img{
+	padding: 30px;
+}
+a.new-action{
+	margin-bottom: 20px;
+}
+
+input[type="file"]{
+	margin-bottom: 25px;
+}
+input[type="date"]:nth-child(2) {
+    margin-left: 5px;
+}

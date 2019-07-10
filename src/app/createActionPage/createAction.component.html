@@ -1,0 +1,35 @@
+<div class="container">
+	<div class="row d-flex">
+		<div class="col-12 create-action">
+			<div class="header">
+				<h2>New Action</h2>
+			</div>
+			<form class="form">
+				<p>1. Action title <br/></p>
+				<input type="text" ng-modal="title">
+		
+				<p><br/>2. Write a brief description od the campaign</p>
+				<textarea name="" id="" cols="59" rows="6" ng-modal="description"></textarea>
+				
+				<p><br/> 4. When will the campaign start and end? This can updated later</p>
+				<div  class="col-6 justify-content-between calender-text">
+					<span>Start</span>
+					<span>End</span>
+				</div>
+			
+				<div class="col-6 calender">
+					<input type="date" ng-modal="dateBegin">
+					<input type="date" ng-modal="dateEnd">
+				</div>
+			
+				<div class="finish-form">
+					<a href="" class="cancel" re>Cancel</a>	
+					<a href=""  class="new-action">Create action</a>
+				</div>
+					
+			</form>
+			
+		</div>
+		
+	</div>
+</div>
